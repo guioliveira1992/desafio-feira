@@ -1,0 +1,13 @@
+
+GET http://localhost/feiras/search Response: 200
+GET http://localhost/feiras/search Response: 200
+DELETE http://localhost/feiras/904 Response: 200
+GET http://localhost/feiras/search Response: 200
+POST http://localhost/feiras Response: 200
+GET http://localhost/feiras/search Response: 200
+PUT http://localhost/feiras/910 Response: 200
+GET http://localhost/feiras/search Response: 404
+GET http://localhost:9080/feiras/search Response: 200
+GET http://localhost:9080/feiras/search Response: 200
+GET http://localhost:9080/feiras/search Response: 200
+GET http://localhost:9080/feiras/search Response: 200
