@@ -19,7 +19,6 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
-import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
 import com.gms.challengerFeira.entity.Feira;
@@ -32,7 +31,7 @@ import com.gms.challengerFeira.repository.FeiraRepository;
 @ActiveProfiles("test")
 public class FeiraControllerTests {
 	
-	/*@Autowired
+	@Autowired
 	private MockMvc mocMvc;
 	
 	@Autowired
@@ -149,6 +148,6 @@ public class FeiraControllerTests {
 				.delete(uri).content(json)
 				.contentType(MediaType.APPLICATION_JSON))
 		.andExpect(MockMvcResultMatchers.status().is(200));
-	}*/
+	}
 
 }
