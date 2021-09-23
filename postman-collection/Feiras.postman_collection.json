@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "0c98a742-476e-4137-abf5-0e1ba7349581",
+		"name": "Feiras",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Created Feira",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"longi\":\"-46550888\",\r\n    \"lat\":\"-23558788\",\r\n    \"setcens\":\"355030885000091\",\r\n    \"areaP\":\"3550308005040\",\r\n    \"codDist\":\"87\",\r\n    \"distrito\":\"VILA FORMOSA\",\r\n    \"codSubPrefe\":\"26\",\r\n    \"subPrefe\":\"ARICANDUVA-FORMOSA-CARRAO\",\r\n    \"regiao5\":\"Leste\",\r\n    \"regiao8\":\"Leste 1\",\r\n    \"nomeFeira\":\"VILA FORMOSA\",\r\n    \"registro\":\"4041-0\",\r\n    \"logradouro\":\"RUA MARAGOJIPE\",\r\n    \"numero\":\"110\",\r\n    \"bairro\":\"VL FORMOSA\",\r\n    \"referencia\":\"TV RUA GLOBO\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9080/feiras",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"feiras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search Feiras",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9080/feiras/search?distrito=&regiao=&nomeFeira=bairro=VL FORMOSA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"feiras",
+						"search"
+					],
+					"query": [
+						{
+							"key": "distrito",
+							"value": ""
+						},
+						{
+							"key": "regiao",
+							"value": ""
+						},
+						{
+							"key": "nomeFeira",
+							"value": "bairro=VL FORMOSA"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated Feiras",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"longi\":\"-46550888\",\r\n    \"lat\":\"-23558788\",\r\n    \"setcens\":\"355030885000091\",\r\n    \"areaP\":\"3550308005040\",\r\n    \"codDist\":\"87\",\r\n    \"distrito\":\"VILA FORMOSA\",\r\n    \"codSubPref\":\"26\",\r\n    \"subPrefe\":\"ARICANDUVA-FORMOSA-CARRAO\",\r\n    \"regiao5\":\"Leste\",\r\n    \"regiao8\":\"Leste 1\",\r\n    \"nomeFeira\":\"VILA FORMOSA - Feira alterada\",\r\n    \"registro\":\"4041-0\",\r\n    \"logradouro\":\"RUA MARAGOJIPE\",\r\n    \"numero\":\"110\",\r\n    \"bairro\":\"VL FORMOSA\",\r\n    \"referencia\":\"TV RUA GLOBO\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9080/feiras/881",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"feiras",
+						"881"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deleted Feiras",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:9080/feiras/881",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9080",
+					"path": [
+						"feiras",
+						"881"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
