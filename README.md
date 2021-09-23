@@ -23,7 +23,7 @@ $ docker cp <Path do arquivo> mysql-docker-container:/var/lib/mysql/desafio/ (Ex
  5 - Execute o container da aplicação<br/>
  $ docker run -d --name desafio-feira --link mysql-docker-container:mysql-docker-container -p 9080:9080 guilhermeoliveira1992/desafio-feira:latest <br/><br/>
   
-Para que possa ter acesso ao logs da aplicação, execute o seguinte comando:<br/>
+Para que possa ter acesso ao arquivo de logs da aplicação, execute o seguinte comando:<br/>
 $  docker cp desafio-feira:/logs.txt <Path destino> (Ex.: cp desafio-feira:/logs.txt C:\Users\test\Desktop\logs)<br/><br/>
   
 Após executar/rodar a aplicaçao será possível acessar a documentação da API Rest através desse endpoint: http://localhost:9080/swagger-ui.html <br/><br/>
